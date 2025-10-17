@@ -173,6 +173,10 @@ h3 {
     margin-top: 2rem;
 }
 
+.skills-grid a {
+    text-decoration: none;
+}
+
 .skill-card {
     padding: 2rem;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -200,14 +204,22 @@ h3 {
 }
 
 .experience-item {
-    background: #f8f9fa;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     padding: 2rem;
     border-radius: 10px;
     margin-bottom: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
+.experience-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+
 .experience-item h4 {
-    color: #667eea;
+    color: white;
     font-size: 1.3rem;
     margin-bottom: 0.3rem;
 }
@@ -222,6 +234,11 @@ h3 {
     margin-left: 1.5rem;
     color: #555;
     line-height: 1.8;
+}
+
+
+.experience-item p {
+    color: rgba(255, 255, 255, 0.95) !important;
 }
 
 .contact-form {
@@ -289,7 +306,8 @@ button {
 }
 
 button:hover {
-    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.3);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
 }
 
 @media (max-width: 768px) {
