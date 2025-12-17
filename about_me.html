@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Joshua Tse</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="about_me.html">About</a></li>
+            <li><a href="index.html#education">Education</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="container content-section">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>
+                    I'm a recent Economics graduate from Stony Brook University with a 3.9 major GPA and a passion for actuarial science and data analysis.
+                    I've successfully passed both SOA Exam P and SOA Exam FM, demonstrating strong foundations in probability and financial mathematics.
+                    I'm actively progressing through my actuarial credentials, combining strong analytical skills with
+                    technical expertise in programming and statistical analysis.
+                </p>
+                <p style="margin-top: 1rem;">
+                    My background spans from rigorous academic coursework in econometrics and statistics to hands-on experience in data analysis,
+                    business operations, and client relations. I'm detail-oriented, self-motivated, and eager to apply my skills in a professional
+                    actuarial or data analytics role.
+                </p>
+            </div>
+
+            <h3>Personal Interests & Hobbies</h3>
+            <div class="about-content">
+                <p>
+                    Outside of my professional pursuits, I enjoy staying active and exploring creative outlets.
+                    As a NASM Certified Personal Trainer, fitness and health are important parts of my lifestyle.
+                    I'm passionate about continuous learning and problem-solving, whether it's through coding projects,
+                    analyzing data patterns, or tackling complex mathematical challenges.
+                </p>
+                <div class="skills-grid" style="margin-top: 1.5rem;">
+                    <div class="skill-card">
+                        <h3>Fitness & Training</h3>
+                        <p>NASM Certified Personal Trainer with a focus on strength training and athletic performance</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Programming Projects</h3>
+                        <p>Building tools and applications that solve real-world problems using Python, R, and web technologies</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Continuous Learning</h3>
+                        <p>Pursuing actuarial credentials and staying current with data science trends and methodologies</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="back-link" style="text-align: center; margin-top: 2rem;">
+                <a href="index.html">← Back to Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
