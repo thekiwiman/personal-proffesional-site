@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Castle Rock REO Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Page-specific styles - minimal overrides */
+        .dashboard-image {
+            width: 100%;
+            max-width: 900px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            margin: 2rem auto;
+            display: block;
+        }
+
+        .back-link {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#education">Education</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="dashboard">
+        <div class="container content-section">
+            <div class="header">
+                <div class="icon">🏠</div>
+                <h1>Castle Rock REO Dashboard</h1>
+                <p class="subtitle">Performance dashboard created for Castle Rock REO</p>
+            </div>
+
+            <div class="description">
+                <p>
+                    Performance dashboard created for Castle Rock REO, built in Power BI to track ROI by platform,
+                    asset manager performance, pull-through rates by bidder, and state-by-state property breakdowns
+                    across the REO (real estate owned) portfolio.
+                </p>
+            </div>
+
+            <img src="Images/castlerock_reo_dashboard.png" alt="Castle Rock REO Dashboard screenshot" class="dashboard-image">
+
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">📊</div>
+                    <h4>ROI by Platform</h4>
+                    <p>Compares returns across listing platforms</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">👤</div>
+                    <h4>Asset Manager Performance</h4>
+                    <p>ROI breakdown by individual asset manager</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🎯</div>
+                    <h4>Pull-Through Rate by Bidder</h4>
+                    <p>Tracks closing rates by bidder name</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🗺️</div>
+                    <h4>State-by-State View</h4>
+                    <p>Geographic breakdown of REO occupancy and sales</p>
+                </div>
+            </div>
+
+            <div class="back-link">
+                <a href="index.html">← Back to Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
